@@ -1,1 +1,1 @@
-# COVID-19 Prediction and Analysis Project
+# COVID-19 Prediction and Analysis
