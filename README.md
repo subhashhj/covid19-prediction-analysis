@@ -1,12 +1,12 @@
-COVID-19 Prediction Project
+**COVID-19 Prediction Project
 
-Objective
+Objective**
 
 The goal of this project is to predict daily confirmed COVID-19 cases in the United States using machine learning techniques. The focus was on feature engineering and model optimization to improve predictive accuracy.
 
-Dataset
+**Dataset**
 
-The dataset contains COVID-19 case data, including:
+The dataset used contain COVID-19 case data, including engineered features:
 
 new_confirmed: Daily new confirmed cases.
 
@@ -20,9 +20,9 @@ Population-normalized metrics (e.g., new_confirmed_per_100k).
 
 Vaccination data (percent_fully_vaccinated).
 
-Steps Taken
+**Steps Taken
 
-Data Preprocessing
+Data Preprocessing**
 
 Handled missing values.
 
@@ -32,19 +32,19 @@ Added rolling averages and sums for smoothing.
 
 Normalized metrics using population data.
 
-Feature Selection
+**Feature Selection**
 
 Applied Recursive Feature Elimination (RFE) to identify the most important features for prediction.
 
 Selected features: new_deceased, new_deceased_10_14_avg, new_deceased_10_14_sum, new_confirmed_per_100k, and new_deceased_per_100k.
 
-Model Training
+**Model Training**
 
 Used a Random Forest Regressor for prediction.
 
 Optimized the model using selected features.
 
-Model Evaluation
+**Model Evaluation**
 
 Mean Absolute Error (MAE): 27.22
 
@@ -52,53 +52,37 @@ Root Mean Squared Error (RMSE): 318.68
 
 R-squared (R²): 0.86
 
-Visualization
+**Visualization**
 
 Plotted Actual vs. Predicted values to assess model performance.
 
 Created scatter plots and trend lines for better interpretability.
 
-Results
+**Results**
 
 The optimized Random Forest model demonstrated significant improvement in predictive accuracy, with an R² score of 0.86, explaining 86% of the variance in the target variable.
 
-Files in the Repository
+**Files in the Repository**
 
-notebooks/:
+**notebooks/:**
 
 Jupyter Notebook containing data exploration, preprocessing, model training, and evaluation.
 
-results/:
+**results/:**
 
 Visualizations (e.g., Actual vs. Predicted plots).
 
-models/:
+**models/:**
 
 Serialized Random Forest model (random_forest_model.pkl).
 
-README.md:
+**README.md:**
 
 Project overview.
 
 requirements.txt:
 
 Python libraries required to run the project.
-
-How to Run the Project
-
-Clone the repository
-
-git clone https://github.com/your_username/covid19-prediction-project.git
-cd covid19-prediction-project
-
-Set up a virtual environment
-
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-Install the required libraries
-
-pip install -r requirements.txt
 
 Run the notebook
 Open the Jupyter Notebook in the notebooks/ folder and run the cells.
